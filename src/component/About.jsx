@@ -1,6 +1,5 @@
-import React from "react";
 import aboutImage from "../assets/15.jpg.jpeg";
-import homeImage from "../assets/home.png.jpeg"
+import homeImage from "../assets/home.png.jpeg";
 
 const About = () => {
   return (
@@ -8,26 +7,33 @@ const About = () => {
       className="bg-cover bg-center bg-no-repeat bg-fixed max-w-7xl mx-auto"
       style={{ backgroundImage: `url(${aboutImage})` }}
     >
-      <div className="flex flex-col md:flex-row items-center px-6 md:px-16 py-20 text-black">
+      <div className="flex flex-col md:flex-row items-center px-6 py-20 text-black">
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-          <h2 className="text-5xl md:text-6xl font-bold font-Garamond">
+          <h3 className="text-5xl md:text-6xl font-bold font-Garamond">
             The better way <br /> to buy real estate.
-          </h2>
-          <p className="text-lg leading-relaxed">
-            We are dedicated to helping you find your dream property. With years
-            of experience and a trusted reputation, we connect clients to the
-            best real estate opportunities. Whether you're buying, selling, or
-            renting we make it seamless and stress-free.
+          </h3>
+          <p className="text-lg leading-relaxed text-gray-600">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its versions have
+            evolved over layout.
           </p>
-          <button className="m-4 px-6 py-3 bg-indigo-500 rounded-lg hover:bg-indigo-700 transition text-white">
-            Contact Me
-          </button>
+          <div className="flex items-center w-full my-4">
+            <input
+              type="text"
+              placeholder="City, Address"
+              className="flex-1 border-2 border-orange-500 px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none"
+            />
+
+            <button className="bg-orange-500 text-white font-semibold px-6 py-3 hover:bg-white hover:text-black transition border-2 border-orange-500">
+              Search
+            </button>
+          </div>
         </div>
-        <div className="w-full md:w-1/2 flex justify-end mb-8 md:mb-0">
+        <div className="w-full md:w-1/2 flex lg:justify-end justify-center mb-8 md:mb-0">
           <img
             src={homeImage}
             alt="About"
-            className="rounded-2xl shadow-lg w-80 md:w-96 hover:scale-105 transition-transform duration-300"
+            className="rounded-2xl shadow-lg w-80 md:w-96 hover:scale-105 transition-transform duration-300 rounded-tl-none rounded-tr-none rounded-bl-4xl rounded-br-none"
           />
         </div>
       </div>

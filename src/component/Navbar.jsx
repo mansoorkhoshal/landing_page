@@ -21,10 +21,10 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex lg:flex-1 items-center justify-end font-normal font-League">
-          <ul className="flex gap-8 text-xl">
+          <ul className="flex gap-8 text-2xl">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.link} className="hover:underline items-center">
+                <a href={item.link} className="hover:text-orange-500 items-center">
                   {item.name}
                 </a>
               </li>
