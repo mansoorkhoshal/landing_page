@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav
       aria-label="Main navigation"
-      className="sticky top-0 z-50 shadow-lg bg-white/30 backdrop-blur-md border-b border-gray-200 py-3"
+      className="sticky top-0 z-50 shadow-lg bg-white/30 backdrop-blur-md border-b border-none py-3"
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between z-50 text-neutral-600">
         <div className="flex flex-1">

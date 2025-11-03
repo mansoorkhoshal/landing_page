@@ -96,7 +96,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-6 py-2 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-6 pb-32 max-w-7xl mx-auto">
           {homeImages.map((item, index) => (
             <div
               key={index}
@@ -117,10 +117,10 @@ const Skills = () => {
                 <p className="text-sm text-gray-500">{item.area}</p>
 
                 <div className="flex justify-between items-center mt-3">
-                  <p className="text-orange-500 font-bold text-lg">
+                  <p className="text-orange-500 font-bold text-3xl">
                     {item.currentPrice}
                   </p>
-                  <p className="text-gray-400 line-through text-sm">
+                  <p className="text-gray-400 line-through text-3xl">
                     {item.retailsPrice}
                   </p>
                 </div>
