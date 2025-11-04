@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,7 +19,9 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between z-50 text-neutral-600">
         <div className="flex flex-1">
-          <img src={Logo} alt="Home Image" className="cursor-pointer" />
+          <h1 className="text-3xl font-bold font-Garamond text-neutral-700 cursor-pointer">
+            MANSOOR
+          </h1>
         </div>
 
         <div className="hidden lg:flex lg:flex-1 items-center justify-end font-normal font-League">

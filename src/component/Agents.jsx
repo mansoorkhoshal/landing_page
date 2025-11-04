@@ -2,32 +2,53 @@ import agent1 from "../assets/1.jpg.jpeg";
 import agent2 from "../assets/2.jpg_2.jpeg";
 import agent3 from "../assets/3.jpg.jpeg";
 import agent4 from "../assets/4.jpg.jpeg";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaDribbble,
+  FaLinkedinIn,
+  FaInstagram,
+  FaGithub,
+  FaDiscord,
+  FaReddit,
+} from "react-icons/fa";
 
 const Agents = () => {
+  const socialLinks = [
+    { icon: <FaLinkedinIn />, link: "#" },
+    { icon: <FaGithub />, link: "#" },
+    { icon: <FaDiscord />, link: "#" },
+    { icon: <FaReddit />, link: "#" },
+  ];
+
   const agentsDetails = [
     {
       agentImg: agent1,
       alt: "Agent 1",
       name: "Joseph Doe",
       properties: "18 Properties",
+      accounts: socialLinks,
     },
     {
       agentImg: agent2,
       alt: "Agent 2",
       name: "Maria Wade",
       properties: "15 Properties",
+      accounts: socialLinks,
     },
     {
       agentImg: agent3,
       alt: "Agent 3",
       name: "David Mach",
       properties: "10 Properties",
+      accounts: socialLinks,
     },
     {
       agentImg: agent4,
       alt: "Agent 4",
       name: "Jeniffer Doe",
       properties: "12 Properties",
+      accounts: socialLinks,
     },
   ];
 
@@ -37,7 +58,7 @@ const Agents = () => {
         <div className=" flex flex-col md:flex-row items-center px-8 py-20 text-neutral-400">
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
-              — Our Perfact Agents
+              — Our Perfect Agents
             </h3>
             <p className="text-lg leading-relaxed text-neutral-400">
               It is a long established fact that a reader will be distracted by
@@ -47,13 +68,11 @@ const Agents = () => {
           </div>
         </div>
       </div>
+
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-6 py-2 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-8 max-w-7xl mx-auto">
           {agentsDetails.map((item, index) => (
-            <div
-              key={index}
-              className="overflow-hidden mb-18"
-            >
+            <div key={index} className="overflow-hidden mb-6 rounded-xl">
               <div className="relative">
                 <img
                   src={item.agentImg}
@@ -61,9 +80,22 @@ const Agents = () => {
                   className="w-full h-80 object-cover rounded-tl-none rounded-tr-none rounded-bl-4xl rounded-br-none"
                 />
               </div>
-              <div className="p-3 text-neutral-300 space-y-1 font-Garamond">
+
+              <div className="p-4 text-neutral-300 space-y-1 font-Garamond">
                 <h4 className="text-2xl">{item.name}</h4>
-                <h5>{item.properties}</h5>
+                <h5 className="text-sm text-gray-400">{item.properties}</h5>
+
+                <div className="flex space-x-3 mt-3">
+                  {item.accounts.map((acc, i) => (
+                    <a
+                      key={i}
+                      href={acc.link}
+                      className="text-xl hover:text-orange-500"
+                    >
+                      {acc.icon}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

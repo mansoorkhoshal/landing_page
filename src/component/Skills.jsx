@@ -21,7 +21,7 @@ const Skills = () => {
   const homeImages = [
     {
       img: home1,
-      address: "Financial Office, Romania",
+      address: "Financial Office, Lahore",
       area: "1500 sqft | 03 beds | 05 baths",
       currentPrice: "$18000",
       retailsPrice: "$20000",
@@ -29,7 +29,7 @@ const Skills = () => {
     },
     {
       img: home2,
-      address: "Tomin Villa, Denmark",
+      address: "Tomin Bungalow, Peshawar",
       area: "1500 sqft | 03 beds | 05 baths",
       currentPrice: "$15000",
       retailsPrice: "$14500",
@@ -37,7 +37,7 @@ const Skills = () => {
     },
     {
       img: home3,
-      address: "Cruzz Villa, Spain",
+      address: "Cruzz Bungalow, Islamabad",
       area: "1500 sqft | 03 beds | 05 baths",
       currentPrice: "$11000",
       retailsPrice: "$14500",
@@ -45,7 +45,7 @@ const Skills = () => {
     },
     {
       img: home4,
-      address: "Milton Villa, NY",
+      address: "Milton Office, Model Town",
       area: "1500 sqft | 03 beds | 05 baths",
       currentPrice: "$12000",
       retailsPrice: "$11500",
@@ -96,7 +96,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-6 pb-32 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-6 pb-32 max-w-7xl mx-auto">
           {homeImages.map((item, index) => (
             <div
               key={index}
