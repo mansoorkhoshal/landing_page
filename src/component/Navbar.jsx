@@ -5,11 +5,11 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", link: "/" },
-    { name: "Properties", link: "/properties" },
-    { name: "Agents", link: "/agents" },
-    { name: "Reviews", link: "/reviews" },
-    { name: "Contact", link: "/contact" },
+    { name: "Home", link: "#home" },
+    { name: "Properties", link: "#properties" },
+    { name: "Agents", link: "#agents" },
+    { name: "Reviews", link: "#reviews" },
+    { name: "Contact", link: "#contact" },
   ];
 
   return (

@@ -62,7 +62,7 @@ const FAQs = () => {
   ];
 
   return (
-    <section>
+    <section >
       <div
         className="relative bg-cover bg-center bg-no-repeat py-16 px-8 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-xl shadow-md"
         style={{
@@ -82,7 +82,7 @@ const FAQs = () => {
           </button>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto" id="contact">
         <div className="my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600">
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h3 className="text-3xl md:text-4xl font-bold font-Garamond">

@@ -5,7 +5,7 @@ import FAQs from "./component/FAQs";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import Skills from "./component/Skills";
-import Testominals from "./component/Testominals";
+import Testimonials from "./component/Testimonials";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Skills />
       <Agents />
       <ContactUs />
-      <Testominals />
+      <Testimonials />
       <FAQs />
       <Footer />
     </>

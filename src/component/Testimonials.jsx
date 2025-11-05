@@ -1,34 +1,34 @@
-import testominal1 from "../assets/1.jpg_1.jpeg";
-import testominal2 from "../assets/2.jpg.jpeg";
-import testominal3 from "../assets/3.jpg.jpeg";
+import testimonail1 from "../assets/1.jpg_1.jpeg";
+import testimonail2 from "../assets/2.jpg.jpeg";
+import testimonail3 from "../assets/3.jpg.jpeg";
 
-const Testominals = () => {
-  const testominalDetails = [
+const Testimonials = () => {
+  const testimonailDetails = [
     {
-      testominalImage: testominal1,
+      testimonailImage: testimonail1,
       alt: "Testominal One",
       subDetails:
         "Lorem ipsum dolor sit amet adipiscing elit sed orci dictum sagittis libero vitae auctor elit. Praesent accumsan mauris eget tortor.",
-      profission: "Front End Developer",
+      profission: "Senior Developer",
     },
     {
-      testominalImage: testominal2,
+      testimonailImage: testimonail2,
       alt: "Testominal Two",
       subDetails:
         "Lorem ipsum dolor sit amet adipiscing elit sed orci dictum sagittis libero vitae auctor elit. Praesent accumsan mauris eget tortor.",
-      profission: ".NET Engineer",
+      profission: "CEO of Meta",
     },
     {
-      testominalImage: testominal3,
+      testimonailImage: testimonail3,
       alt: "Testominal Three",
       subDetails:
         "Lorem ipsum dolor sit amet adipiscing elit sed orci dictum sagittis libero vitae auctor elit. Praesent accumsan mauris eget tortor.",
-      profission: "Full Stack Developer",
+      profission: "Software Enigneer",
     },
   ];
 
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto" id="reviews">
       <div className="items-center px-8 py-15 text-neutral-600">
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
           <h3 className="text-3xl md:text-4xl font-bold font-Garamond mb-30">
@@ -37,14 +37,14 @@ const Testominals = () => {
         </div>
         <div className="flex justify-center items-center text-center">
           <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 lg:gap-2 gap-9 pb-20 max-w-7xl mx-auto">
-            {testominalDetails.map((item, index) => (
+            {testimonailDetails.map((item, index) => (
               <div
                 key={index}
                 className="bg-white shadow-lg  rounded-tl-none rounded-tr-none rounded-bl-4xl rounded-br-none"
               >
                 <div className="p-15 text-neutral-700 space-y-2 font-Garamond italic">
                   <img
-                    src={item.testominalImage}
+                    src={item.testimonailImage}
                     alt={item.alt}
                     className="w-35 h-35 rounded-full object-cover mx-auto mb-9"
                   />
@@ -60,4 +60,4 @@ const Testominals = () => {
   );
 };
 
-export default Testominals;
+export default Testimonials;

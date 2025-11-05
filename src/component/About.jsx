@@ -4,6 +4,7 @@ import homeImage from "../assets/home.png.jpeg";
 const About = () => {
   return (
     <section
+    id="home"
       className="bg-cover bg-center bg-no-repeat max-w-7xl mx-auto"
       style={{ backgroundImage: `url(${aboutImage})` }}
     >

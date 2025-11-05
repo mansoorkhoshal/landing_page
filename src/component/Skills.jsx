@@ -82,7 +82,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <div className="my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600">
+        <div className="my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600" id="properties">
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
               — Home For Sale

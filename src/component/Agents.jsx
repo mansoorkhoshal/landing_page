@@ -53,7 +53,7 @@ const Agents = () => {
   ];
 
   return (
-    <section className="bg-neutral-800">
+    <section className="bg-neutral-800" id="agents">
       <div className="bg-cover bg-center bg-no-repeat max-w-7xl mx-auto ">
         <div className=" flex flex-col md:flex-row items-center px-8 py-20 text-neutral-400">
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
@@ -64,7 +64,7 @@ const Agents = () => {
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its versions have
               evolved over layout.
-            </p>
+            </p>  
           </div>
         </div>
       </div>
