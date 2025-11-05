@@ -17,16 +17,22 @@ const About = () => {
             the readable content of a page when looking at its versions have
             evolved over layout.
           </p>
-          <div className="flex flex-col sm:flex-row items-stretch w-full max-w-2xl my-4">
-            <input
-              type="text"
-              placeholder="City, Address"
-              className="flex-1 border-2 border-orange-500 pl-1 py-3 text-neutral-600 placeholder-neutral-500 focus:outline-none"
-            />
+          <div className="w-full max-w-2xl my-4 mx-auto">
+            <form className="flex items-stretch gap-2 bg-white rounded-xl shadow-sm overflow-hidden">
+              <input
+                type="text"
+                aria-label="City or address"
+                placeholder="City, Address"
+                className="flex-1 min-w-0 px-4 py-3 text-neutral-700 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-white transition"
+              />
 
-            <button className="bg-orange-500 text-white  font-semibold px-6 py-3 hover:bg-white hover:text-neutral-600 transition border-2 border-orange-500 mt-2 sm:mt-0">
-              Search
-            </button>
+              <button
+                type="submit"
+                className="shrink-0 bg-orange-500 text-white font-semibold px-6 py-3 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-white transition"
+              >
+                Search
+              </button>
+            </form>
           </div>
         </div>
         <div className="w-full lg:h-139 md:w-1/2 flex lg:justify-end justify-center mb-8 md:mb-0">
