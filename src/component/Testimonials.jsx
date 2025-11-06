@@ -1,6 +1,6 @@
-import testimonail1 from "../assets/1.jpg_1.jpeg";
-import testimonail2 from "../assets/2.jpg.jpeg";
-import testimonail3 from "../assets/3.jpg.jpeg";
+import testimonail1 from "../assets/testimonials01.jpeg";
+import testimonail2 from "../assets/testimonials02.jpeg";
+import testimonail3 from "../assets/testimonials03.jpeg";
 
 const Testimonials = () => {
   const testimonailDetails = [

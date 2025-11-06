@@ -19,7 +19,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between z-50 text-neutral-600">
         <div className="flex flex-1">
-          <h1 className="text-3xl font-bold font-Garamond text-neutral-700 cursor-pointer">
+          <h1 className="text-3xl font-bold font-Garamond text-neutral-700 cursor-pointer" id="home">
             MANSOOR
           </h1>
         </div>

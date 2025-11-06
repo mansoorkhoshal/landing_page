@@ -1,17 +1,8 @@
-import agent1 from "../assets/1.jpg.jpeg";
-import agent2 from "../assets/2.jpg_2.jpeg";
-import agent3 from "../assets/3.jpg.jpeg";
-import agent4 from "../assets/4.jpg.jpeg";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaDribbble,
-  FaLinkedinIn,
-  FaInstagram,
-  FaGithub,
-  FaDiscord,
-  FaReddit,
-} from "react-icons/fa";
+import agent1 from "../assets/agent01.jpeg";
+import agent2 from "../assets/agent02.jpeg";
+import agent3 from "../assets/agent03.jpeg";
+import agent4 from "../assets/agent04.jpeg";
+import { FaLinkedinIn, FaGithub, FaDiscord, FaReddit } from "react-icons/fa";
 
 const Agents = () => {
   const socialLinks = [
@@ -64,7 +55,7 @@ const Agents = () => {
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its versions have
               evolved over layout.
-            </p>  
+            </p>
           </div>
         </div>
       </div>
@@ -72,7 +63,7 @@ const Agents = () => {
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-8 max-w-7xl mx-auto">
           {agentsDetails.map((item, index) => (
-            <div key={index} className="overflow-hidden mb-6 rounded-xl">
+            <div key={index} className="overflow-hidden mb-6">
               <div className="relative">
                 <img
                   src={item.agentImg}

@@ -1,13 +1,13 @@
-import skillBack from "../assets/bordered-wave.png";
-import companyLogo1 from "../assets/1.png";
-import companyLogo2 from "../assets/2.png";
-import companyLogo3 from "../assets/3.png";
-import companyLogo4 from "../assets/4.png";
-import companyLogo5 from "../assets/5.png";
-import home1 from "../assets/01.jpg.jpeg";
-import home2 from "../assets/02.jpg.jpeg";
-import home3 from "../assets/03.jpg.jpeg";
-import home4 from "../assets/04.jpg.jpeg";
+import skillBack from "../assets/background_wave.png";
+import companyLogo1 from "../assets/cmpnyLogo1.png";
+import companyLogo2 from "../assets/cmpnyLogo2.png";
+import companyLogo3 from "../assets/cmpnyLogo3.png";
+import companyLogo4 from "../assets/cmpnyLogo4.png";
+import companyLogo5 from "../assets/cmpnyLogo5.png";
+import home1 from "../assets/homeImg01.jpeg";
+import home2 from "../assets/homeImg02.jpeg";
+import home3 from "../assets/homeImg03.jpeg";
+import home4 from "../assets/homeImg04.jpeg";
 
 const Skills = () => {
   const companyLogos = [
@@ -82,7 +82,10 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <div className="my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600" id="properties">
+        <div
+          className="my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600"
+          id="properties"
+        >
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
               — Home For Sale

@@ -51,7 +51,6 @@ const Footer = () => {
                   {section.description}
                 </p>
                 <div className="flex flex-wrap gap-4 text-xl">
-                  {/* Added flex-wrap and gap instead of space-x to prevent breaking under 420px */}
                   {section.social?.map((s, i) => (
                     // In this code talha brother i used the (optional chaining)
                     // so it work if something exsit in the section.social part.

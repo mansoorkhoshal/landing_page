@@ -1,7 +1,6 @@
 import { FaUserTie } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { TbHandFinger } from "react-icons/tb";
-// import backgroundImage from "../assets/1.jpg_1.jpeg";
 
 const ContactUs = () => {
   const cardDetails = [
