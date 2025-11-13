@@ -15,35 +15,36 @@ const Navbar = () => {
   return (
     <nav
       aria-label="Main navigation"
-      className="sticky top-0 z-50 shadow-lg bg-white/30 backdrop-blur-md border-b border-none py-3"
+      className="sticky top-0 z-50 backdrop-blur-md border-b border-black/10 py-1"
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between z-50 text-neutral-600">
-        <div className="flex flex-1">
-          <h1 className="text-3xl font-bold font-Garamond text-neutral-700 cursor-pointer" id="home">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <h1 className="text-2xl sm:text-3xl font-Garamond font-bold text-neutral-800 cursor-pointer">
             MANSOOR
           </h1>
+          <span className="hidden sm:inline text-sm text-neutral-500">
+            Real Estate
+          </span>
         </div>
 
-        <div className="hidden lg:flex lg:flex-1 items-center justify-end font-normal font-League">
-          <ul className="flex gap-8 text-2xl">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                <a
-                  href={item.link}
-                  className="hover:text-orange-500 items-center hover:duration-400"
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="hidden lg:flex items-center gap-8 font-League text-lg">
+          {navItems.map((item, i) => (
+            <a
+              key={i}
+              href={item.link}
+              className="relative px-1 py-1 text-neutral-700 hover:text-orange-500 transition-colors"
+              onClick={() => setOpen(false)}
+            >
+              {item.name}
+            </a>
+          ))}
         </div>
 
         <button
-          className="lg:hidden ml-4 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2"
           aria-controls="mobile-menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
+          className="lg:hidden p-2 rounded-md text-neutral-700 focus:outline-none focus:ring-2 focus:ring-orange-400"
         >
           <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
           {open ? (
@@ -56,17 +57,18 @@ const Navbar = () => {
 
       <div
         id="mobile-menu"
-        className={`lg:hidden transition-max-height duration-500 overflow-hidden ${
-          open ? "max-h-60" : "max-h-0"
+        className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ${
+          open ? "max-h-64" : "max-h-0"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-3">
-          <ul className="flex flex-col gap-4 p-4 text-lg text-neutral-600">
-            {navItems.map((item, index) => (
-              <li key={index}>
+        <div className="px-4 pb-4">
+          <ul className="flex flex-col gap-3">
+            {navItems.map((item, i) => (
+              <li key={i}>
                 <a
                   href={item.link}
-                  className="hover:text-orange-500 hover:duration-300 flex gap-2"
+                  onClick={() => setOpen(false)}
+                  className="block px-3 py-2 rounded-md text-neutral-700 hover:bg-orange-50 hover:text-orange-600 transition"
                 >
                   {item.name}
                 </a>

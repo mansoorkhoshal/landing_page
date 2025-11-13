@@ -42,14 +42,16 @@ const Testimonials = () => {
                 key={index}
                 className="bg-white shadow-lg  rounded-tl-none rounded-tr-none rounded-bl-4xl rounded-br-none"
               >
-                <div className="p-15 text-neutral-700 space-y-2 font-Garamond italic">
+                <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
                   <img
                     src={item.testimonailImage}
                     alt={item.alt}
-                    className="w-35 h-35 rounded-full object-cover mx-auto mb-9"
+                    className="w-24 h-24 rounded-full object-cover mx-auto mb-4"
                   />
-                  <p className="text-xl text-gray-500">{item.subDetails}</p>
-                  <p className="text-xl text-gray-500">{item.profission}</p>
+                  <p className="text-gray-600 italic mb-3">
+                    “{item.subDetails}”
+                  </p>
+                  <p className="text-sm text-neutral-500">{item.profission}</p>
                 </div>
               </div>
             ))}

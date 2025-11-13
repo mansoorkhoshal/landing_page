@@ -2,6 +2,16 @@
 
 @import "tailwindcss";
 
-@theme{
-    --font-Garamond: "EB Garamond", "Alan Sans";
+@theme {
+  --font-Garamond: "EB Garamond", "Alan Sans";
+}
+/* smooth scroll for nicer UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* optional: tune focus outline for accessibility */
+:focus {
+  outline: 3px solid rgba(249, 115, 22, 0.35);
+  outline-offset: 2px;
 }

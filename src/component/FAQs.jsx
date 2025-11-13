@@ -62,26 +62,22 @@ const FAQs = () => {
   ];
 
   return (
-    <section >
+    <section>
       <div
-        className="relative bg-cover bg-center bg-no-repeat py-16 px-8 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-xl shadow-md"
-        style={{
-          backgroundImage: `url(${backImage})`,
-        }}
+        className="relative bg-cover bg-center bg-no-repeat py-16 px-8 max-w-7xl mx-auto rounded-xl shadow-md"
+        style={{ backgroundImage: `url(${backImage})` }}
       >
         <div className="absolute inset-0 bg-black/40 rounded-xl"></div>
-        <div className="relative z-10 text-center md:text-left">
-          <h2 className="text-white text-3xl md:text-4xl font-bold font-Garamond">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 scroll-mt-20">
+          <h2 className="text-white text-2xl md:text-3xl font-bold font-Garamond">
             Request a Free Consultation!!
           </h2>
-        </div>
-
-        <div className="relative z-10 mt-6 md:mt-0">
-          <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-8 rounded-md shadow-md transition duration-300">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-md shadow-lg transition">
             Reserve A Slot
           </button>
         </div>
       </div>
+
       <div className="max-w-7xl mx-auto" id="contact">
         <div className="my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600">
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
@@ -96,7 +92,10 @@ const FAQs = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div
+          className="flex justify-center items-center  scroll-mt-20"
+          id="contact"
+        >
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pb-20 max-w-7xl px-6">
             {cardDetails.map((item, index) => (
               <div

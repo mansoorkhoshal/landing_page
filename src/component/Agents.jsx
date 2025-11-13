@@ -44,53 +44,46 @@ const Agents = () => {
   ];
 
   return (
-    <section className="bg-neutral-800" id="agents">
-      <div className="bg-cover bg-center bg-no-repeat max-w-7xl mx-auto ">
-        <div className=" flex flex-col md:flex-row items-center px-8 py-20 text-neutral-400">
-          <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-            <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
-              — Our Perfect Agents
-            </h3>
-            <p className="text-lg leading-relaxed text-neutral-400">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its versions have
-              evolved over layout.
-            </p>
-          </div>
+    <section className="bg-neutral-900" id="agents">
+      <div className="max-w-7xl mx-auto px-6 py-20 text-neutral-300 scroll-mt-20">
+        <div className="md:w-1/2 space-y-4">
+          <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
+            — Our Perfect Agents
+          </h3>
+          <p className="text-lg text-neutral-400">
+            Trusted local agents to guide you through every step.
+          </p>
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-8 max-w-7xl mx-auto">
-          {agentsDetails.map((item, index) => (
-            <div key={index} className="overflow-hidden mb-6">
-              <div className="relative">
-                <img
-                  src={item.agentImg}
-                  alt={item.alt}
-                  className="w-full h-80 object-cover rounded-tl-none rounded-tr-none rounded-bl-4xl rounded-br-none"
-                />
-              </div>
-
-              <div className="p-4 text-neutral-300 space-y-1 font-Garamond">
-                <h4 className="text-2xl">{item.name}</h4>
-                <h5 className="text-sm text-gray-400">{item.properties}</h5>
-
-                <div className="flex space-x-3 mt-3">
-                  {item.accounts.map((acc, i) => (
-                    <a
-                      key={i}
-                      href={acc.link}
-                      className="text-xl hover:text-orange-500"
-                    >
-                      {acc.icon}
-                    </a>
-                  ))}
-                </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-8 max-w-7xl mx-auto">
+        {agentsDetails.map((item, index) => (
+          <div
+            key={index}
+            className="bg-neutral-800 rounded-2xl overflow-hidden transform hover:-translate-y-2 transition-shadow shadow-lg hover:shadow-2xl"
+          >
+            <img
+              src={item.agentImg}
+              alt={item.alt}
+              className="w-full h-80 object-cover"
+            />
+            <div className="p-4 text-neutral-200 space-y-1">
+              <h4 className="text-2xl">{item.name}</h4>
+              <h5 className="text-sm text-neutral-400">{item.properties}</h5>
+              <div className="flex gap-3 mt-3">
+                {item.accounts.map((acc, i) => (
+                  <a
+                    key={i}
+                    href={acc.link}
+                    className="p-2 rounded-md bg-white/5 hover:bg-orange-500 hover:text-white transition"
+                  >
+                    {acc.icon}
+                  </a>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
