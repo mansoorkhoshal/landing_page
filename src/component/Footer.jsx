@@ -13,11 +13,16 @@ const Footer = () => {
       description:
         "Donec quis tincidunt felis. Sed aliquet ac nulla a condimentum. Curabitur massa sapien.",
       social: [
-        { icon: <FaLinkedinIn />, link: "#" },
-        { icon: <FaGithub />, link: "#" },
-        { icon: <FaReddit />, link: "#" },
-        { icon: <FaDiscord />, link: "#" },
-        { icon: <FaInstagram />, link: "#" },
+        {
+          icon: <FaLinkedinIn />,
+          link: "https://www.linkedin.com/in/mansoorkhoshal/",
+        },
+        { icon: <FaGithub />, link: "https://github.com/mansoorkhoshal" },
+        {
+          icon: <FaDiscord />,
+          link: "https://discord.com/users/1368626128222163034",
+        },
+        { icon: <FaInstagram />, link: "https://instagram.com/mansoorkhoshal" },
       ],
     },
     {
@@ -44,18 +49,20 @@ const Footer = () => {
             </h3>
 
             {section.description && (
-              // this is the other new concept for me that if
-              // something exsit they show it if not they ignore this part and goes ago.
               <>
                 <p className="text-sm leading-relaxed mb-4">
                   {section.description}
                 </p>
+
                 <div className="flex flex-wrap gap-4 text-xl">
                   {section.social?.map((s, i) => (
-                    // In this code talha brother i used the (optional chaining)
-                    // so it work if something exsit in the section.social part.
-                    // okay and Im very happy to learn this its realy amazing for me.
-                    <a key={i} href={s.link} className="hover:text-gray-200">
+                    <a
+                      key={i}
+                      href={s.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-200"
+                    >
                       {s.icon}
                     </a>
                   ))}
@@ -69,6 +76,8 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="hover:text-gray-200 hover:underline underline-offset-4 transition duration-200"
                     >
                       {link}
@@ -87,4 +96,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;

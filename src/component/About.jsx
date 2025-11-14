@@ -19,17 +19,17 @@ const About = () => {
           </p>
 
           <div className="w-full max-w-2xl my-4 mx-auto">
-            <form className="flex items-center gap-2 bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+            <form className="flex items-center bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
               <input
                 type="text"
                 aria-label="City or address"
                 placeholder="City, Address — e.g., Model Town, Lahore"
-                className="flex-1 px-4 py-3 text-neutral-700 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+                className="flex-1 px-4 py-5 text-neutral-700 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
               />
 
               <button
                 type="submit"
-                className="shrink-0 bg-orange-500 text-white font-semibold px-6 py-3 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+                className="shrink-0 bg-orange-500 text-white font-semibold px-6 py-5 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
               >
                 Search
               </button>
