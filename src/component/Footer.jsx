@@ -1,10 +1,4 @@
-import {
-  FaLinkedinIn,
-  FaInstagram,
-  FaGithub,
-  FaReddit,
-  FaDiscord,
-} from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaGithub, FaDiscord } from "react-icons/fa";
 
 const Footer = () => {
   const footerSections = [
@@ -40,10 +34,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-orange-500 text-white pt-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-3 sm:px-6">
+    <footer className="bg-orange-500 text-white pt-12 w-full overflow-hidden">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-3 sm:px-6 min-w-0">
         {footerSections.map((section, index) => (
-          <div key={index}>
+          <div key={index} className="min-w-0">
             <h3 className="text-lg font-semibold mb-4 border-l-4 border-white pl-2">
               {section.title}
             </h3>
@@ -61,7 +55,8 @@ const Footer = () => {
                       href={s.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-gray-200"
+                      className="hover:text-gray-200 inline-flex items-center justify-center p-1"
+                      aria-label={`open social ${i + 1}`}
                     >
                       {s.icon}
                     </a>
@@ -78,7 +73,7 @@ const Footer = () => {
                       href="#"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-gray-200 hover:underline underline-offset-4 transition duration-200"
+                      className="hover:text-gray-200 hover:underline underline-offset-4 transition duration-200 break-words"
                     >
                       {link}
                     </a>
@@ -90,7 +85,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="bg-black text-center text-xl text-gray-200 mt-10 p-6 font-Garamond">
+      <div className="bg-black text-center text-xl text-gray-200 mt-10 p-6 font-Garamond w-full">
         © {new Date().getFullYear()} Mansoor Khoshal. All rights reserved.
       </div>
     </footer>

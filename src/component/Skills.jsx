@@ -1,13 +1,13 @@
-import skillBack from "../assets/background_wave.png";
-import companyLogo1 from "../assets/cmpnyLogo1.png";
-import companyLogo2 from "../assets/cmpnyLogo2.png";
-import companyLogo3 from "../assets/cmpnyLogo3.png";
-import companyLogo4 from "../assets/cmpnyLogo4.png";
-import companyLogo5 from "../assets/cmpnyLogo5.png";
-import home1 from "../assets/homeImg01.jpeg";
-import home2 from "../assets/homeImg02.jpeg";
-import home3 from "../assets/homeImg03.jpeg";
-import home4 from "../assets/homeImg04.jpeg";
+import skillBack from "../../public/background_wave.png";
+import companyLogo1 from "../../public/cmpnyLogo1.png";
+import companyLogo2 from "../../public/cmpnyLogo2.png";
+import companyLogo3 from "../../public/cmpnyLogo3.png";
+import companyLogo4 from "../../public/cmpnyLogo4.png";
+import companyLogo5 from "../../public/cmpnyLogo5.png";
+import home1 from "../../public/homeImg01.jpeg";
+import home2 from "../../public/homeImg02.jpeg";
+import home3 from "../../public/homeImg03.jpeg";
+import home4 from "../../public/homeImg04.jpeg";
 
 const Skills = () => {
   const companyLogos = [

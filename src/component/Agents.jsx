@@ -1,7 +1,7 @@
-import agent1 from "../assets/agent01.jpeg";
-import agent2 from "../assets/agent02.jpeg";
-import agent3 from "../assets/agent03.jpeg";
-import agent4 from "../assets/agent04.jpeg";
+import agent1 from "../../public/agent01.jpeg";
+import agent2 from "../../public/agent02.jpeg";
+import agent3 from "../../public/agent03.jpeg";
+import agent4 from "../../public/agent04.jpeg";
 import { FaLinkedinIn, FaGithub, FaDiscord, FaReddit } from "react-icons/fa";
 
 const Agents = () => {
@@ -44,9 +44,9 @@ const Agents = () => {
   ];
 
   return (
-    <section className="bg-neutral-900" id="agents">
+    <section className="bg-neutral-900 w-full" id="agents">
       <div className="max-w-7xl mx-auto px-6 py-20 text-neutral-300 scroll-mt-20">
-        <div className="md:w-1/2 space-y-4">
+        <div className="md:w-1/2 space-y-4 min-w-0">
           <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
             — Our Perfect Agents
           </h3>
@@ -56,16 +56,16 @@ const Agents = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-8 max-w-7xl mx-auto min-w-0">
         {agentsDetails.map((item, index) => (
           <div
             key={index}
-            className="bg-neutral-800 rounded-2xl overflow-hidden transform hover:-translate-y-2 transition-shadow shadow-lg hover:shadow-2xl"
+            className="bg-neutral-800 rounded-2xl overflow-hidden transform hover:-translate-y-2 transition-shadow shadow-lg hover:shadow-2xl min-w-0"
           >
             <img
               src={item.agentImg}
               alt={item.alt}
-              className="w-full h-80 object-cover"
+              className="w-full max-w-full block h-56 sm:h-64 md:h-80 object-cover"
             />
             <div className="p-4 text-neutral-200 space-y-1">
               <h4 className="text-2xl">{item.name}</h4>
@@ -75,7 +75,8 @@ const Agents = () => {
                   <a
                     key={i}
                     href={acc.link}
-                    className="p-2 rounded-md bg-white/5 hover:bg-orange-500 hover:text-white transition"
+                    className="p-2 rounded-md bg-white/5 hover:bg-orange-500 hover:text-white transition inline-flex items-center justify-center"
+                    aria-label={`open ${item.name} social ${i + 1}`}
                   >
                     {acc.icon}
                   </a>

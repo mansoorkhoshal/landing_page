@@ -15,10 +15,10 @@ const Navbar = () => {
   return (
     <nav
       aria-label="Main navigation"
-      className="sticky top-0 z-50 backdrop-blur-md border-b border-black/10 py-1"
+      className="sticky top-0 z-50 backdrop-blur-md border-b border-black/10 py-1 w-full"
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-4">
+      <div className="w-full max-w-7xl mx-auto px-6 h-16 flex items-center justify-between min-w-0">
+        <div className="flex items-center gap-4 min-w-0">
           <h1 className="text-2xl sm:text-3xl font-Garamond font-bold text-neutral-800 cursor-pointer">
             MANSOOR
           </h1>
@@ -44,7 +44,7 @@ const Navbar = () => {
           aria-controls="mobile-menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden p-2 rounded-md text-neutral-700 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="lg:hidden p-2 rounded-md text-neutral-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
         >
           <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
           {open ? (
@@ -57,9 +57,10 @@ const Navbar = () => {
 
       <div
         id="mobile-menu"
-        className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ${
+        className={`lg:hidden overflow-hidden transition-[max-height] duration-300 w-full left-0 ${
           open ? "max-h-64" : "max-h-0"
         }`}
+        style={{ willChange: "max-height" }}
       >
         <div className="px-4 pb-4">
           <ul className="flex flex-col gap-3">
