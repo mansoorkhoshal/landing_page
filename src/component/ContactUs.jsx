@@ -45,7 +45,7 @@ const ContactUs = () => {
           {cardDetails.map((item, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg overflow-visible rounded-tl-none rounded-tr-none rounded-bl-4xl rounded-br-none"
+              className="bg-white shadow-lg overflow-visible rounded-tl-none pt-7 rounded-tr-none rounded-bl-4xl rounded-br-none"
             >
               <div className="relative">
                 <span className="absolute left-3 top-0 -translate-y-1/2 transform z-10 flex items-center justify-center bg-orange-500 px-4 py-3.5 rounded-bl-4xl">
