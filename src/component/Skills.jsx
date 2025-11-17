@@ -83,7 +83,7 @@ const Skills = () => {
           ))}
         </div>
         <div
-          className="my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600"
+          className="scroll-mt-65 sm:scroll-mt-2 my-15 flex flex-col md:flex-row items-center px-8 py-20 text-neutral-600"
           id="properties"
         >
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">

@@ -73,7 +73,7 @@ const Footer = () => {
                       href="#"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-gray-200 hover:underline underline-offset-4 transition duration-200 break-words"
+                      className="hover:text-gray-200 hover:underline underline-offset-4 transition duration-200 break "
                     >
                       {link}
                     </a>

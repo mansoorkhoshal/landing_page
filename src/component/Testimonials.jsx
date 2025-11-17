@@ -28,7 +28,10 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto scroll-mt-28" id="reviews">
+    <section
+      className="max-w-7xl mx-auto scroll-mt-70 sm:scroll-mt-8"
+      id="reviews"
+    >
       <div className="items-center px-8 py-15 text-neutral-600">
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
           <h3 className="text-3xl md:text-4xl font-bold font-Garamond mb-3">

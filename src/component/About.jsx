@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="home"
-      className="scroll-mt-20 bg-cover bg-center bg-no-repeat max-w-7xl mx-auto"
+      className="scroll-mt-80 sm:scroll-90 bg-cover bg-center bg-no-repeat max-w-7xl mx-auto"
     >
       <div className="bg-white/70 backdrop-blur-sm rounded-xl mx-4 md:mx-0 flex flex-col-reverse md:flex-row items-center px-6 py-12 md:py-20 text-neutral-800">
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4">

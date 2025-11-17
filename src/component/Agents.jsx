@@ -44,8 +44,11 @@ const Agents = () => {
   ];
 
   return (
-    <section className="bg-neutral-900 w-full" id="agents">
-      <div className="max-w-7xl mx-auto px-6 py-20 text-neutral-300 scroll-mt-20">
+    <section className="bg-neutral-900 w-full">
+      <div
+        className="max-w-7xl mx-auto px-6 py-20 text-neutral-300 scroll-mt-82 sm:scroll-mt-18"
+        id="agents"
+      >
         <div className="md:w-1/2 space-y-4 min-w-0">
           <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
             — Our Perfect Agents

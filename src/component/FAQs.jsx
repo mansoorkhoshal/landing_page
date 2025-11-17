@@ -78,7 +78,10 @@ const FAQs = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto" id="contact">
+      <div
+        className="max-w-7xl mx-auto scroll-mt-65 sm:scroll-mt-2"
+        id="contact"
+      >
         <div className="my-15 flex flex-col md:flex-row items-center px-6 py-20 text-neutral-600 w-full min-w-0">
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4 min-w-0">
             <h3 className="text-3xl md:text-4xl font-bold font-Garamond">
